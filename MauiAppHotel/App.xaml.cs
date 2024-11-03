@@ -6,6 +6,8 @@
         {
             InitializeComponent();
 
+            // MainPage = new NavigationPage(new Sobre.Sobre()); buscar uma forma de implementar isso depois
+
             MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
         } // Fecha método1
 

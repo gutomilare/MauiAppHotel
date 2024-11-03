@@ -57,9 +57,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\x.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\Kalam-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Light.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Roboto-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Roboto-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Roboto-Thin.ttf" />
+	  <None Remove="Resources\Images\csharp.png" />
+	  <None Remove="Resources\Images\dotnet.png" />
+	  <None Remove="Resources\Images\github.png" />
+	  <None Remove="Resources\Images\guto.jpeg" />
+	  <None Remove="Resources\Images\instagram.png" />
+	  <None Remove="Resources\Images\linkedin.png" />
+	  <None Remove="Resources\Images\x.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -69,6 +83,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Sobre\Sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
