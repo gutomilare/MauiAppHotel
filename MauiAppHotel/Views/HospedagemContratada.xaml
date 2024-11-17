@@ -24,7 +24,7 @@
             <VerticalStackLayout>
 
                 <Label
-                    Text="Suíte Super Luxo"
+                    Text="{Binding QuartoSelecionado.Descricao}"
                     TextColor="Snow"
                     FontFamily="Roboto-Bold"
                     FontSize="30"
@@ -42,7 +42,7 @@
                                    FontFamily="Roboto"
                                    TextColor="Snow"/>
                             
-                            <Label Text=" 2"
+                            <Label Text="{Binding QntAdultos}"
                                    FontSize="18"
                                    FontFamily="Roboto"
                                    TextColor="Snow"/>
@@ -56,7 +56,7 @@
                                    FontFamily="Roboto"
                                    TextColor="Snow"/>
 
-                            <Label Text=" 1"
+                            <Label Text="{Binding QntCriancas}"
                                    FontSize="18"
                                    FontFamily="Roboto"
                                    TextColor="Snow"/>
@@ -89,15 +89,15 @@
                 
                         <Label Grid.Row="1"
                             Grid.Column="0"
-                            Text="valor 1"/>
+                            Text="{Binding DataCheckin, StringFormat='{}{0:dd/MM/yyyy}'}"/>
 
                         <Label Grid.Row="1"
                             Grid.Column="1"
-                            Text="valor 2"/>
+                            Text="{Binding DataCheckout, StringFormat='{}{0:dd/MM/yyyy}'}"/>
 
                         <Label Grid.Row="1"
                             Grid.Column="2"
-                            Text="valor 3"/>
+                            Text="{Binding Estadia}"/>
 
                     </Grid>
             
@@ -112,7 +112,7 @@
                                FontFamily="Roboto"
                                TextColor="Snow"/>
                         
-                        <Label Text="R$ 500,00"
+                        <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"
                                FontSize="18"
                                FontFamily="Roboto-Bold"
                                TextColor="Snow"
